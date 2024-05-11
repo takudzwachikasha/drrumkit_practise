@@ -1,6 +1,16 @@
-var numberOfButtons =  document.querySelectorAll(".drum").length;
+var numberOfButtons = document.querySelectorAll(".drum").length;
 for (var i = 0; i < numberOfButtons; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
-  this.style.color = "white";
+
+    var buttonInnerHtml = this.innerHTML;
+
+    switch (buttonInnerHtml) {
+      case "w":
+        var audio = new Audio("sounds/tom-1.mp3");
+        audio.play();
+        break;
+      default:
+
+    }
   });
 }
