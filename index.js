@@ -24,15 +24,14 @@ for (var i = 0; i < numberOfButtons; i++) {
         var tom4 = new Audio("sounds/tom-4.mp3");
         tom4.play();
         break;
-
-      case "k":
-        var snare = new Audio("sounds/snare.mp3");
-        snare.play();
-        break;
-
       case "j":
         var crash = new Audio("sounds/crash.mp3");
         crash.play();
+        break;
+        
+      case "k":
+        var snare = new Audio("sounds/snare.mp3");
+        snare.play();
         break;
 
       case "l":
@@ -40,7 +39,8 @@ for (var i = 0; i < numberOfButtons; i++) {
         kick.play();
         break;
 
-      default: console.log(buttonInnerHtml);
+      default:
+        console.log(buttonInnerHtml);
 
     }
   });
