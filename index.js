@@ -9,9 +9,11 @@ for (var i = 0; i < numberOfButtons; i++) {
 
 }
 
-document.addEventListener("keydown", function(event){ makeSound(event.key);});
+document.addEventListener("keydown", function(event) {
+  makeSound(event.key);
+});
 
-function makeSound(key){
+function makeSound(key) {
   switch (key) {
     case "w":
       var tom1 = new Audio("sounds/tom-1.mp3");
