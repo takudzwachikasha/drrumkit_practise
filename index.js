@@ -1,4 +1,3 @@
-
 //Detecting clicks on the buttons
 
 var numberOfButtons = document.querySelectorAll(".drum").length;
@@ -63,6 +62,7 @@ function makeSound(key) {
 }
 
 
-function buttonAnimation(currentKey){
-
+function buttonAnimation(currentKey) {
+  var activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
 }
