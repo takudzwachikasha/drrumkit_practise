@@ -43,9 +43,8 @@ for (var i = 0; i < numberOfButtons; i++) {
         console.log(buttonInnerHtml);
 
     }
-
-    addEventListener("keydown", function(){
-      alert("Key was pressed!!");
-    })
   });
+
 }
+
+document.addEventListener("keydown", function(event){ alert("Key was pressed!!");});
