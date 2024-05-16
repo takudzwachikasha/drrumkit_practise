@@ -9,7 +9,7 @@ for (var i = 0; i < numberOfButtons; i++) {
 
 }
 
-document.addEventListener("keydown", function(event){ alert("Key was pressed!!");});
+document.addEventListener("keydown", function(event){ makeSound(event.key);});
 
 function makeSound(key){
   switch (key) {
