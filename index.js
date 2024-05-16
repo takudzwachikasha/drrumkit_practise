@@ -8,12 +8,16 @@ for (var i = 0; i < numberOfButtons; i++) {
     var buttonInnerHtml = this.innerHTML;
     makeSound(buttonInnerHtml);
 
+    buttonAnimation(buttonInnerHtml);
+
   });
 
 }
 //Detecting keyboard clicks
 document.addEventListener("keydown", function(event) {
   makeSound(event.key);
+
+  buttonAnimation(event.key);
 });
 
 function makeSound(key) {
@@ -56,4 +60,9 @@ function makeSound(key) {
       console.log(buttonInnerHtml);
 
   }
+}
+
+
+function buttonAnimation(currentKey){
+
 }
