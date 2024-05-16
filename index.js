@@ -1,3 +1,6 @@
+
+//Detecting clicks on the buttons
+
 var numberOfButtons = document.querySelectorAll(".drum").length;
 for (var i = 0; i < numberOfButtons; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
@@ -8,7 +11,7 @@ for (var i = 0; i < numberOfButtons; i++) {
   });
 
 }
-
+//Detecting keyboard clicks
 document.addEventListener("keydown", function(event) {
   makeSound(event.key);
 });
